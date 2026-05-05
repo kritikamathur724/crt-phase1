@@ -1,0 +1,115 @@
+problem 1: right and reverse triANGLE
+  #include<iostream>
+using namespace std;
+
+int main(){
+    //Upper triangle
+    for(int i=1; i<=5;i++){
+        for(int j=1; j<=i;j++){
+            cout <<"*";
+        }
+        cout <<"\n";
+    }
+    //lower triangle
+    for(int i=5 - 1; i>=1; i--){
+        for(int j=1; j<=i; j++){
+        cout<<"*";
+    }
+    cout<<"\n";
+    }
+}
+
+problem 2: addition of 2 no.
+  #include<iostream>
+using namespace std;
+
+void printMessage(){
+    cout <<"Hi we are learning function....";
+}
+int main(){
+    printMessage();
+    return 0;
+}
+  problem3:function with some value and some other value
+    #include<iostream>
+using namespace std;
+
+int calculateArea(int length, int width){
+    
+}
+
+int main(){
+    int a = 12;
+    int b = 10;
+    int area =calculateArea(a,b);
+    cout <<area;
+    
+}
+
+problem4: type of funvctions
+  prog4.1(bo argument , no return value
+          #include<iostream>
+using namespace std;
+
+void bellRing(){
+    cout <<"Ting Tong...";
+}
+int main(){
+    bellRing();
+    
+}
+
+          problem4.2 --argument no return value#include<iostream>
+using namespace std;
+
+void sendMessage(string message){
+    cout <<message;
+}
+
+int main() {
+    sendMessage("BJP wons");
+}
+          prolem 4.3 no argument  , return values
+          #include<iostream>
+using namespace std;
+
+int ticketNumber(){
+    return 101;
+}
+
+int main(){
+    cout << ticketNumber();
+}
+
+          problem 4.4 currency conversion
+          #include <iostream>
+using namespace std;
+
+float currencyConvertor(int rupees){
+    return rupees / 95.25;
+    
+}
+ int main() {
+     cout << currencyConvertor(200);
+    
+ }
+
+          problem5 : functon  overloading 
+          include <iostream>
+using namespace std;
+ 
+ double add(double a, double b){
+     return a+b;
+ }
+ int add(int a, int b, int c){
+     return a+b+c;
+ }
+ float add(float a,float b, float c, float d)
+ int main(){
+     cout<<add(5,2) <<"\n";
+     cout <<add(5,2,3) <<"\n";
+     cout <<add(5.0,2.3,5.5,7.9);
+ }
+ }
+ }
+    
