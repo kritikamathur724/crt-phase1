@@ -1,0 +1,118 @@
+problem1:cofee billiing system 
+#inlcude <iostream>
+using namespace std;
+
+int billing(int a){
+    return a * 30;
+}
+
+int main() {
+    cout << billing(50);
+
+}
+
+problem2: score discount application
+  include<iostream>
+using namespace std;
+int calculateTotal(int amount){
+    int discount= amount*0.10;
+    return amount-discount;
+}
+int main(){
+   cout<<calculateTotal(1000);
+    
+}
+
+problem 3:Smart AC remote
+  include<iostream>
+using namespace std;
+
+void setTemprature(){
+    cout << "Temprature Set to 22C"  <<"\n";
+}
+
+void setTemprature(string mode){
+    if(mode == "ECO"){
+        cout << "Temprature Set to 24 C" << "\n";
+    }else if(mode == "TURBO"){
+        cout <<"Temprature set to 18 C " << "\n";
+    }
+}
+int main() {
+    setTemprature();
+    setTemprature(20.5);
+    setTemprature("ECO");
+    
+}
+
+problem4 :pointers
+  include<iostream>
+using namespace std;
+
+int main() {
+    int a =10;
+    int *ptr1 =&a;
+    
+    int b = 20;
+    int *ptr2 = &b;
+    
+    int c = a + b;
+    int c = *ptr1 +ptr2;
+    cout << c;
+}
+
+problem5: swaping of 2 variables using pointers and using fucntions
+  include<iostream>
+using namespace std;
+
+void swapNumber(int *ptr1 , int *ptr2){
+    int temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+}
+
+int main() {
+    int a, b;
+    cin >> a;
+    cin >>b;
+    swapNumber(&a, &b);
+    cout << a <<" " <<b;
+}
+
+problem6: print age and name
+  
+  #include<iostream>
+  using namespace std;
+class student{
+    
+    public:
+    string name;
+    int age;
+    
+    void introduce(){
+        cout <<"HI there, this person name is "name <<"and his age is "<< "\n;"
+    }
+};
+
+int main() {
+    Student s1,s2;
+    s1.nae = "Abhishek";
+    s1.age = 24;
+    s2.name = "rahul";
+    s1.introduce();
+    s2.introduce();
+}
+
+problem7:excess specifier
+#include<iostream>
+using namespace std;
+class Publicpark{
+    public:
+    void enter(){
+        cout<<"anyone can visit";
+    }
+};
+int main(){
+    Publicpark p;
+    p.enter();
+}
